@@ -9,6 +9,7 @@ import { Pelicula } from './Components/Peliculas';
 import { Animes } from './Components/Animes/Animes';
 import { Peticiones } from './Components/Peticiones';
 import AnimeForo from './Components/AnimeForo/index';
+import { Ayuda } from './Components/Ayuda';
 
 export const Router = () => {
 
@@ -34,6 +35,7 @@ export const Router = () => {
                 <Route exact path="/Peliculas" component={Pelicula}></Route>
                 <Route exact path="/Peticiones" component={Peticiones}></Route>
                 <Route exact path="/Anime/:id" component={AnimeForo} />
+                <Route exact path="/Ayuda" component={Ayuda} />
                 <Route exact path="*" component={PaginaNoEncontrada}></Route>
                 
             </Switch>
